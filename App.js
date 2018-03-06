@@ -69,7 +69,11 @@ export default class App extends React.Component {
     // manipulate state
     this.setState({
       locationName: response.location,
-      currentTemperature: Math.round(response.weather.currently.apparenTemperature)
+      currentTemperature: Math.round(response.weather.currently.apparentTemperature),
+      currentIcon: response.weather.currently.icon,
+      currentSummary: response.weather.currently.summary,
+
+      
     });
   }
 
