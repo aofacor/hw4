@@ -72,8 +72,6 @@ export default class App extends React.Component {
       currentTemperature: Math.round(response.weather.currently.apparentTemperature),
       currentIcon: response.weather.currently.icon,
       currentSummary: response.weather.currently.summary,
-
-      
     });
   }
 
